@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo -n "Enter your name: "
+read -t 5 name || name=tmpuser
+
+if [ -z "$name" ]; then
+    name=tmpuser
+fi
+
+echo "Hello, $name!"
